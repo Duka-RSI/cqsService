@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\_報價系統\QuotaionGitHub\publish</_PublishTargetUrl>
+    <History>True|2024-07-05T02:38:43.9738413Z||;False|2024-07-05T10:38:01.8368977+08:00||;True|2024-07-05T10:35:02.8642545+08:00||;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefualtDatabase">
+      <Value>Server=.%3bDatabase=Quotaion%3bUser=sa%3bPassword=rsict1234%3bTrusted_Connection=True%3bTrustServerCertificate=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

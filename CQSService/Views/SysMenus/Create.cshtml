@@ -1,0 +1,97 @@
+﻿@model CQSService.Models.SysMenu
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+<h4>SysMenu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ParentId" class="control-label"></label>
+                <input asp-for="ParentId" class="form-control" />
+                <span asp-validation-for="ParentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreePath" class="control-label"></label>
+                <input asp-for="TreePath" class="form-control" />
+                <span asp-validation-for="TreePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Component" class="control-label"></label>
+                <input asp-for="Component" class="form-control" />
+                <span asp-validation-for="Component" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Perm" class="control-label"></label>
+                <input asp-for="Perm" class="form-control" />
+                <span asp-validation-for="Perm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlwaysShow" class="control-label"></label>
+                <input asp-for="AlwaysShow" class="form-control" />
+                <span asp-validation-for="AlwaysShow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KeepAlive" class="control-label"></label>
+                <input asp-for="KeepAlive" class="form-control" />
+                <span asp-validation-for="KeepAlive" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Redirect" class="control-label"></label>
+                <input asp-for="Redirect" class="form-control" />
+                <span asp-validation-for="Redirect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreateTime" class="control-label"></label>
+                <input asp-for="CreateTime" class="form-control" />
+                <span asp-validation-for="CreateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateTime" class="control-label"></label>
+                <input asp-for="UpdateTime" class="form-control" />
+                <span asp-validation-for="UpdateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Params" class="control-label"></label>
+                <input asp-for="Params" class="form-control" />
+                <span asp-validation-for="Params" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>
